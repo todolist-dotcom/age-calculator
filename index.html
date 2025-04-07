@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts for stylish typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <p class="subtitle">Discover your exact age in years, months, and days</p>
+        
+        <div class="calculator-card">
+            <!-- Date of Birth Input -->
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" max="">
+            </div>
+            
+            <!-- Calculate Button -->
+            <button id="calculate-btn" class="calculate-btn">Calculate Age</button>
+            
+            <!-- Results Section (initially hidden) -->
+            <div id="results" class="results-container">
+                <div class="result-box">
+                    <span id="years" class="result-number">--</span>
+                    <span class="result-label">Years</span>
+                </div>
+                <div class="result-box">
+                    <span id="months" class="result-number">--</span>
+                    <span class="result-label">Months</span>
+                </div>
+                <div class="result-box">
+                    <span id="days" class="result-number">--</span>
+                    <span class="result-label">Days</span>
+                </div>
+            </div>
+            
+            <!-- Error Message (initially hidden) -->
+            <div id="error-msg" class="error-message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
